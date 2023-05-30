@@ -10,6 +10,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/psyche/proprietary/vendor/bin/batterysecret:$(TARGET_COPY_OUT_VENDOR)/bin/batterysecret \
     vendor/xiaomi/psyche/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
     vendor/xiaomi/psyche/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service \
+    vendor/xiaomi/psyche/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service \
     vendor/xiaomi/psyche/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
     vendor/xiaomi/psyche/proprietary/vendor/bin/init.qti.chg_policy.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.chg_policy.sh \
     vendor/xiaomi/psyche/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
@@ -87,6 +88,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/psyche/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/xiaomi/psyche/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/psyche/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
+    vendor/xiaomi/psyche/proprietary/vendor/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc \
     vendor/xiaomi/psyche/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/psyche/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/xiaomi/psyche/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
@@ -205,6 +207,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/psyche/proprietary/vendor/lib/hw/audio.primary.kona.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.kona.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib/hw/fingerprint.goodix_fod.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.goodix_fod.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
+    vendor/xiaomi/psyche/proprietary/vendor/lib/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/liba2dpoffload.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_log_utils.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
@@ -269,6 +272,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/psyche/proprietary/vendor/lib/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.audiohalext@1.0.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib/vendor.xiaomi.hardware.fx.tunnel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.fx.tunnel@1.0.so \
+    vendor/xiaomi/psyche/proprietary/vendor/lib/vendor.xiaomi.hardware.touchfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.touchfeature@1.0.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib/vndk/libxlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libxlog.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib64/camera/com.qti.actuator.psyche_sunny_s5k5e9yx04_dw9800_macro_actuator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.actuator.psyche_sunny_s5k5e9yx04_dw9800_macro_actuator.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib64/camera/com.qti.eeprom.psyche_ofilm_ov13b10_p24c64f_ultra_wide_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.psyche_ofilm_ov13b10_p24c64f_ultra_wide_eeprom.so \
@@ -380,6 +384,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/psyche/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib64/hw/fingerprint.goodix_fod.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_fod.default.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
+    vendor/xiaomi/psyche/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib64/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlacSwDec.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib64/libFace3DTA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFace3DTA.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib64/libFace3D_hlos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFace3D_hlos.so \
@@ -504,7 +509,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/psyche/proprietary/vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.audiohalext@1.0.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
     vendor/xiaomi/psyche/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
-    vendor/xiaomi/psyche/proprietary/vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
+    vendor/xiaomi/psyche/proprietary/vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so \
+    vendor/xiaomi/psyche/proprietary/vendor/lib64/vendor.xiaomi.hardware.touchfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.touchfeature@1.0.so
 
 PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON \
